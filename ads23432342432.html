@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Duurzaam Wonen Nederland</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+ tailwind.config = {
+  darkMode: 'class',
+  theme: {
+   extend: {},
+  },
+  plugins: [require("flowbite/plugin")],
+ }
+</script>
+<link href="https://cdn.jsdelivr.net/npm/flowbite/dist/flowbite.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/flowbite/dist/flowbite.min.js"></script>
+
+</head>
+
+<body>
+
+<nav class="bg-white border-gray-200">
+ <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+  <a href="https://flowbite.com" class="flex items-center space-x-3 rtl:space-x-reverse">
+   <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+   <span class="self-center text-2xl font-semibold whitespace-nowrap text-black">Flowbite</span>
+  </a>
+   
+  <button data-collapse-toggle="mega-menu-full-image" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="mega-menu-full-image" aria-expanded="false">
+   <span class="sr-only">Open main menu</span>
+   <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+   </svg>
+  </button>
+
+  <div id="mega-menu-full-image" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+   <ul class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
+    <li><a href="#" class="block py-2 px-3 text-black border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Home</a></li>
+    <li>
+     <button id="mega-menu-full-cta-image-button" data-collapse-toggle="mega-menu-full-image-dropdown" class="flex items-center justify-between w-full py-2 px-3 font-medium text-black border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0">
+      Company 
+      <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+      </svg>
+     </button>
+    </li>
+    <li><a href="#" class="block py-2 px-3 text-black border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Marketplace</a></li>
+    <li><a href="#" class="block py-2 px-3 text-black border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Resources</a></li>
+    <li><a href="#" class="block py-2 px-3 text-black border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Contact</a></li>
+   </ul>
+  </div>
+ </div>
+
+ <div id="mega-menu-full-image-dropdown" class="mt-1 bg-white border-gray-200 shadow-xs border-y">
+  <div class="grid max-w-screen-xl px-4 py-5 mx-auto text-sm text-gray-500 md:grid-cols-3 md:px-6">
+   <ul class="hidden mb-4 space-y-4 md:mb-0 md:block">
+    <li><a href="#" class="hover:underline hover:text-blue-600">Online Stores</a></li>
+    <li><a href="#" class="hover:underline hover:text-blue-600">Segmentation</a></li>
+    <li><a href="#" class="hover:underline hover:text-blue-600">Marketing CRM</a></li>
+    <li><a href="#" class="hover:underline hover:text-blue-600">Online Stores</a></li>
+   </ul>
+   <ul class="mb-4 space-y-4 md:mb-0">
+    <li><a href="#" class="hover:underline hover:text-blue-600">Our Blog</a></li>
+    <li><a href="#" class="hover:underline hover:text-blue-600">Terms & Conditions</a></li>
+    <li><a href="#" class="hover:underline hover:text-blue-600">License</a></li>
+    <li><a href="#" class="hover:underline hover:text-blue-600">Resources</a></li>
+   </ul>
+   <a href="#" class="p-8 bg-local bg-gray-200 bg-center bg-no-repeat bg-cover rounded-lg bg-blend-multiply hover:bg-blend-soft-light" style="background-image: url(/docs/images/dashboard-overview.png)">
+    <p class="max-w-xl mb-5 font-extrabold leading-tight tracking-tight text-black">Preview the new Flowbite dashboard navigation.</p>
+    <button type="button" class="inline-flex items-center px-2.5 py-1.5 text-xs font-medium text-center text-black border border-black rounded-lg hover:bg-black hover:text-white focus:ring-4 focus:outline-none focus:ring-gray-300">
+     Get started
+     <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+     </svg>
+    </button>
+   </a>
+  </div>
+ </div>
+</nav>
+<nav class="flex bg-white p-2 rounded-lg" aria-label="Breadcrumb">
+ <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+  <li class="inline-flex items-center">
+   <a href="#" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600">
+    <svg class="w-3 h-3 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+     <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
+    </svg>
+    Home
+   </a>
+  </li>
+  <li>
+   <div class="flex items-center">
+    <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+    </svg>
+    <a href="#" class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2">Projects</a>
+   </div>
+  </li>
+  <li aria-current="page">
+   <div class="flex items-center">
+    <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+    </svg>
+    <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2">Flowbite</span>
+   </div>
+  </li>
+ </ol>
+</nav>
+
+
+<section class="bg-white"><div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6"><div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16"><h2 class="mb-4 text-4xl tracking-tight font-extrabold text-black">Our Blog</h2><p class="font-light text-black sm:text-xl">We use an agile approach to test assumptions and connect with the needs of your audience early and often.</p></div><div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3"><article class="p-4 bg-white rounded-lg border border-black shadow-md"><a href="zonnepanelen/"><img class="mb-5 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/blog/google-hq.png" alt="Google HQ"></a><h2 class="my-2 text-2xl font-bold tracking-tight text-black"><a href="zonnepanelen/">Zonnepanelen Laten Inmeten</a></h2><p class="mb-4 font-light text-black">Laat nu jouw Zonnepanelen Inmeten</p></article><article class="p-4 bg-white rounded-lg border border-black shadow-md"><a href="zonnepanelen/"><img class="mb-5 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/blog/google-hq.png" alt="Google HQ"></a><h2 class="my-2 text-2xl font-bold tracking-tight text-black"><a href="zonnepanelen/">Zonnepanelen Offerte Aanvragen</a></h2><p class="mb-4 font-light text-black">Laat nu jouw Zonnepanelen Offerte Opstellen</p></article><article class="p-4 bg-white rounded-lg border border-black shadow-md"><a href="zonnepanelen/"><img class="mb-5 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/blog/google-hq.png" alt="Google HQ"></a><h2 class="my-2 text-2xl font-bold tracking-tight text-black"><a href="zonnepanelen/">Zonnepanelen Kopen</a></h2><p class="mb-4 font-light text-black">Koop nu jouw Zonnepanelen</p></article><article class="p-4 bg-white rounded-lg border border-black shadow-md"><a href="zonnepanelen/"><img class="mb-5 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/blog/google-hq.png" alt="Google HQ"></a><h2 class="my-2 text-2xl font-bold tracking-tight text-black"><a href="zonnepanelen/">Zonnepanelen Laten Plaatsen</a></h2><p class="mb-4 font-light text-black">Laat nu jouw Zonnepanelen Plaatsen</p></article><article class="p-4 bg-white rounded-lg border border-black shadow-md"><a href="zonnepanelen/"><img class="mb-5 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/blog/google-hq.png" alt="Google HQ"></a><h2 class="my-2 text-2xl font-bold tracking-tight text-black"><a href="zonnepanelen/">Zonnepanelen Op Maat Laten Maken</a></h2><p class="mb-4 font-light text-black">Laat nu jouw Zonnepanelen Op Maat Maken</p></article><article class="p-4 bg-white rounded-lg border border-black shadow-md"><a href="zonnepanelen/vrijblijvend-advies"><img class="mb-5 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/blog/google-hq.png" alt="Google HQ"></a><h2 class="my-2 text-2xl font-bold tracking-tight text-black"><a href="zonnepanelen/vrijblijvend-advies">Zonnepanelen Vrijblijvend Advies</a></h2><p class="mb-4 font-light text-black">Advies voor jouw Zonnepanelen Project</p></article></div></div></section><section class="bg-white"><div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6"><div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16"><h2 class="mb-4 text-4xl tracking-tight font-extrabold text-black">Our Blog</h2><p class="font-light text-black sm:text-xl">We use an agile approach to test assumptions and connect with the needs of your audience early and often.</p></div><div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3"><article class="p-4 bg-white rounded-lg border border-black shadow-md"><a href="zonnepanelen/"><img class="mb-5 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/blog/google-hq.png" alt="Google HQ"></a><h2 class="my-2 text-2xl font-bold tracking-tight text-black"><a href="zonnepanelen/">Zonnepanelen Laten Inmeten</a></h2><p class="mb-4 font-light text-black">Laat nu jouw Zonnepanelen Inmeten</p></article><article class="p-4 bg-white rounded-lg border border-black shadow-md"><a href="zonnepanelen/"><img class="mb-5 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/blog/google-hq.png" alt="Google HQ"></a><h2 class="my-2 text-2xl font-bold tracking-tight text-black"><a href="zonnepanelen/">Zonnepanelen Offerte Aanvragen</a></h2><p class="mb-4 font-light text-black">Laat nu jouw Zonnepanelen Offerte Opstellen</p></article><article class="p-4 bg-white rounded-lg border border-black shadow-md"><a href="zonnepanelen/"><img class="mb-5 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/blog/google-hq.png" alt="Google HQ"></a><h2 class="my-2 text-2xl font-bold tracking-tight text-black"><a href="zonnepanelen/">Zonnepanelen Kopen</a></h2><p class="mb-4 font-light text-black">Koop nu jouw Zonnepanelen</p></article><article class="p-4 bg-white rounded-lg border border-black shadow-md"><a href="zonnepanelen/"><img class="mb-5 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/blog/google-hq.png" alt="Google HQ"></a><h2 class="my-2 text-2xl font-bold tracking-tight text-black"><a href="zonnepanelen/">Zonnepanelen Laten Plaatsen</a></h2><p class="mb-4 font-light text-black">Laat nu jouw Zonnepanelen Plaatsen</p></article><article class="p-4 bg-white rounded-lg border border-black shadow-md"><a href="zonnepanelen/"><img class="mb-5 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/blog/google-hq.png" alt="Google HQ"></a><h2 class="my-2 text-2xl font-bold tracking-tight text-black"><a href="zonnepanelen/">Zonnepanelen Op Maat Laten Maken</a></h2><p class="mb-4 font-light text-black">Laat nu jouw Zonnepanelen Op Maat Maken</p></article><article class="p-4 bg-white rounded-lg border border-black shadow-md"><a href="zonnepanelen/vrijblijvend-advies"><img class="mb-5 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/blog/google-hq.png" alt="Google HQ"></a><h2 class="my-2 text-2xl font-bold tracking-tight text-black"><a href="zonnepanelen/vrijblijvend-advies">Zonnepanelen Vrijblijvend Advies</a></h2><p class="mb-4 font-light text-black">Advies voor jouw Zonnepanelen Project</p></article></div></div></section><section class="bg-white light:bg-gray-900">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+    <h2 class="mb-6 lg:mb-8 text-3xl lg:text-4xl tracking-tight font-extrabold text-center text-gray-900 light:text-white">Veelgestelde Vragen</h2>
+    <div class="mx-auto max-w-screen-md">
+      <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white light:bg-gray-900 text-gray-900 light:text-white" data-inactive-classes="text-gray-500 light:text-gray-400">
+         <h2 id="accordion-flush-heading-reckxFDYFccCHBw07">
+ <button type="button" class="flex justify-between items-center py-5 w-full font-medium text-left text-black bg-white border-b border-black" 
+  data-accordion-target="#accordion-flush-body-reckxFDYFccCHBw07" 
+  aria-expanded="false" 
+  aria-controls="accordion-flush-body-reckxFDYFccCHBw07">
+  <span>Wat kost het vervangen van zonnepanelen?</span>
+  <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+   <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+  </svg>
+ </button>
+</h2>
+<div id="accordion-flush-body-reckxFDYFccCHBw07" class="hidden" aria-labelledby="accordion-flush-heading-reckxFDYFccCHBw07">
+ <div class="py-5 border-b border-black">
+  <p class="mb-2 text-black">De kosten voor vervanging hangen af van het type paneel en de installatie. Vaak worden ze pas na 25-30 jaar vervangen, tenzij er schade optreedt.</p>
+  <a href="https://example.com/programmatic-seo" class="text-black hover:underline">Learn More</a>
+ </div>
+</div>
+<h2 id="accordion-flush-heading-recXJvxLDiUoKFV23">
+ <button type="button" class="flex justify-between items-center py-5 w-full font-medium text-left text-black bg-white border-b border-black" 
+  data-accordion-target="#accordion-flush-body-recXJvxLDiUoKFV23" 
+  aria-expanded="false" 
+  aria-controls="accordion-flush-body-recXJvxLDiUoKFV23">
+  <span>Welke kleur kiezen voor zonnepanelen?</span>
+  <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+   <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+  </svg>
+ </button>
+</h2>
+<div id="accordion-flush-body-recXJvxLDiUoKFV23" class="hidden" aria-labelledby="accordion-flush-heading-recXJvxLDiUoKFV23">
+ <div class="py-5 border-b border-black">
+  <p class="mb-2 text-black">Zonnepanelen zijn meestal zwart of blauw. Zwarte panelen (full black) zijn esthetischer en passen beter op moderne daken.</p>
+  <a href="https://example.com/programmatic-seo" class="text-black hover:underline">Learn More</a>
+ </div>
+</div>
+<h2 id="accordion-flush-heading-reczTebtaDSoI95Vx">
+ <button type="button" class="flex justify-between items-center py-5 w-full font-medium text-left text-black bg-white border-b border-black" 
+  data-accordion-target="#accordion-flush-body-reczTebtaDSoI95Vx" 
+  aria-expanded="false" 
+  aria-controls="accordion-flush-body-reczTebtaDSoI95Vx">
+  <span>Hoe worden zonnepanelen gemaakt?</span>
+  <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+   <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+  </svg>
+ </button>
+</h2>
+<div id="accordion-flush-body-reczTebtaDSoI95Vx" class="hidden" aria-labelledby="accordion-flush-heading-reczTebtaDSoI95Vx">
+ <div class="py-5 border-b border-black">
+  <p class="mb-2 text-black">Zonnepanelen bestaan uit siliciumcellen die via een fotovoltaïsch proces zonlicht omzetten in elektriciteit. De technologie blijft zich ontwikkelen voor meer rendement.</p>
+  <a href="https://example.com/programmatic-seo" class="text-black hover:underline">Learn More</a>
+ </div>
+</div>
+<h2 id="accordion-flush-heading-recQzdtsKNMT7bOXK">
+ <button type="button" class="flex justify-between items-center py-5 w-full font-medium text-left text-black bg-white border-b border-black" 
+  data-accordion-target="#accordion-flush-body-recQzdtsKNMT7bOXK" 
+  aria-expanded="false" 
+  aria-controls="accordion-flush-body-recQzdtsKNMT7bOXK">
+  <span>Wat zijn de voordelen van zonnepanelen?</span>
+  <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+   <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+  </svg>
+ </button>
+</h2>
+<div id="accordion-flush-body-recQzdtsKNMT7bOXK" class="hidden" aria-labelledby="accordion-flush-heading-recQzdtsKNMT7bOXK">
+ <div class="py-5 border-b border-black">
+  <p class="mb-2 text-black">Zonnepanelen verlagen je energierekening, verminderen CO₂-uitstoot en verhogen de waarde van je woning. Daarnaast zijn ze onderhoudsarm en gaan ze lang mee.</p>
+  <a href="https://example.com/programmatic-seo" class="text-black hover:underline">Learn More</a>
+ </div>
+</div>
+<h2 id="accordion-flush-heading-reclCqEioz8noYieE">
+ <button type="button" class="flex justify-between items-center py-5 w-full font-medium text-left text-black bg-white border-b border-black" 
+  data-accordion-target="#accordion-flush-body-reclCqEioz8noYieE" 
+  aria-expanded="false" 
+  aria-controls="accordion-flush-body-reclCqEioz8noYieE">
+  <span>Wat kosten zonnepanelen?</span>
+  <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+   <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+  </svg>
+ </button>
+</h2>
+<div id="accordion-flush-body-reclCqEioz8noYieE" class="hidden" aria-labelledby="accordion-flush-heading-reclCqEioz8noYieE">
+ <div class="py-5 border-b border-black">
+  <p class="mb-2 text-black">De prijs van zonnepanelen hangt af van het merk, vermogen en installatiekosten. Bekijk de kosten per paneel en voor een gemiddeld huishouden.</p>
+  <a href="https://example.com/programmatic-seo" class="text-black hover:underline">Learn More</a>
+ </div>
+</div>
+<h2 id="accordion-flush-heading-recfEEjxCZPjPWdos">
+ <button type="button" class="flex justify-between items-center py-5 w-full font-medium text-left text-black bg-white border-b border-black" 
+  data-accordion-target="#accordion-flush-body-recfEEjxCZPjPWdos" 
+  aria-expanded="false" 
+  aria-controls="accordion-flush-body-recfEEjxCZPjPWdos">
+  <span>Wat zijn de gemiddelde kosten van zonnepanelen?</span>
+  <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+   <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+  </svg>
+ </button>
+</h2>
+<div id="accordion-flush-body-recfEEjxCZPjPWdos" class="hidden" aria-labelledby="accordion-flush-heading-recfEEjxCZPjPWdos">
+ <div class="py-5 border-b border-black">
+  <p class="mb-2 text-black">De gemiddelde prijs voor een compleet zonnepanelensysteem ligt tussen €4.000 en €8.000, afhankelijk van het aantal panelen en de installatie.</p>
+  <a href="https://example.com/programmatic-seo" class="text-black hover:underline">Learn More</a>
+ </div>
+</div>
+<h2 id="accordion-flush-heading-recuh0L8WNlPy3tNg">
+ <button type="button" class="flex justify-between items-center py-5 w-full font-medium text-left text-black bg-white border-b border-black" 
+  data-accordion-target="#accordion-flush-body-recuh0L8WNlPy3tNg" 
+  aria-expanded="false" 
+  aria-controls="accordion-flush-body-recuh0L8WNlPy3tNg">
+  <span>Kun je zonnepanelen schoonmaken?</span>
+  <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+   <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+  </svg>
+ </button>
+</h2>
+<div id="accordion-flush-body-recuh0L8WNlPy3tNg" class="hidden" aria-labelledby="accordion-flush-heading-recuh0L8WNlPy3tNg">
+ <div class="py-5 border-b border-black">
+  <p class="mb-2 text-black">Ja, zonnepanelen kunnen gereinigd worden voor optimaal rendement. Gebruik lauw water en een zachte borstel of laat een professional het doen.</p>
+  <a href="https://example.com/programmatic-seo" class="text-black hover:underline">Learn More</a>
+ </div>
+</div>
+<h2 id="accordion-flush-heading-recjRNZzwMoxVoTXl">
+ <button type="button" class="flex justify-between items-center py-5 w-full font-medium text-left text-black bg-white border-b border-black" 
+  data-accordion-target="#accordion-flush-body-recjRNZzwMoxVoTXl" 
+  aria-expanded="false" 
+  aria-controls="accordion-flush-body-recjRNZzwMoxVoTXl">
+  <span>Zijn er subsidies beschikbaar voor zonnepanelen?</span>
+  <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+   <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+  </svg>
+ </button>
+</h2>
+<div id="accordion-flush-body-recjRNZzwMoxVoTXl" class="hidden" aria-labelledby="accordion-flush-heading-recjRNZzwMoxVoTXl">
+ <div class="py-5 border-b border-black">
+  <p class="mb-2 text-black">In Nederland kun je de btw op zonnepanelen terugvragen. Daarnaast zijn er regionale subsidies en leningen voor energiebesparende maatregelen.</p>
+  <a href="https://example.com/programmatic-seo" class="text-black hover:underline">Learn More</a>
+ </div>
+</div>
+<h2 id="accordion-flush-heading-recApSxCgKniktMbQ">
+ <button type="button" class="flex justify-between items-center py-5 w-full font-medium text-left text-black bg-white border-b border-black" 
+  data-accordion-target="#accordion-flush-body-recApSxCgKniktMbQ" 
+  aria-expanded="false" 
+  aria-controls="accordion-flush-body-recApSxCgKniktMbQ">
+  <span>Hoe lang gaan zonnepanelen mee?</span>
+  <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+   <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+  </svg>
+ </button>
+</h2>
+<div id="accordion-flush-body-recApSxCgKniktMbQ" class="hidden" aria-labelledby="accordion-flush-heading-recApSxCgKniktMbQ">
+ <div class="py-5 border-b border-black">
+  <p class="mb-2 text-black">Zonnepanelen gaan gemiddeld 25 tot 30 jaar mee. De efficiëntie neemt langzaam af, maar goede panelen blijven lang stroom produceren.</p>
+  <a href="https://example.com/programmatic-seo" class="text-black hover:underline">Learn More</a>
+ </div>
+</div>
+<h2 id="accordion-flush-heading-rec2M8N2lN0j5Od8W">
+ <button type="button" class="flex justify-between items-center py-5 w-full font-medium text-left text-black bg-white border-b border-black" 
+  data-accordion-target="#accordion-flush-body-rec2M8N2lN0j5Od8W" 
+  aria-expanded="false" 
+  aria-controls="accordion-flush-body-rec2M8N2lN0j5Od8W">
+  <span>Wat zijn de beste zonnepanelen?</span>
+  <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+   <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+  </svg>
+ </button>
+</h2>
+<div id="accordion-flush-body-rec2M8N2lN0j5Od8W" class="hidden" aria-labelledby="accordion-flush-heading-rec2M8N2lN0j5Od8W">
+ <div class="py-5 border-b border-black">
+  <p class="mb-2 text-black">De beste zonnepanelen bieden een hoog rendement, lange garantie en komen van betrouwbare merken zoals SunPower, LG, en JA Solar.</p>
+  <a href="https://example.com/programmatic-seo" class="text-black hover:underline">Learn More</a>
+ </div>
+</div>
+<h2 id="accordion-flush-heading-recj3ksaRrUH7AJmX">
+ <button type="button" class="flex justify-between items-center py-5 w-full font-medium text-left text-black bg-white border-b border-black" 
+  data-accordion-target="#accordion-flush-body-recj3ksaRrUH7AJmX" 
+  aria-expanded="false" 
+  aria-controls="accordion-flush-body-recj3ksaRrUH7AJmX">
+  <span>Hoe verschillen zonnepanelen van zonneboilers?</span>
+  <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+   <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+  </svg>
+ </button>
+</h2>
+<div id="accordion-flush-body-recj3ksaRrUH7AJmX" class="hidden" aria-labelledby="accordion-flush-heading-recj3ksaRrUH7AJmX">
+ <div class="py-5 border-b border-black">
+  <p class="mb-2 text-black">Zonnepanelen zetten zonlicht om in elektriciteit, terwijl zonneboilers zonnewarmte gebruiken om water op te warmen. Beide verminderen de energiekosten.</p>
+  <a href="https://example.com/programmatic-seo" class="text-black hover:underline">Learn More</a>
+ </div>
+</div>
+</div> </div> </div> </section>
+</body>
+</html>
+
+</html>
+Single line text
+Add field
+You can also insert a new product anywhere by pressing Shift-Enter
